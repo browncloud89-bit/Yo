@@ -1,0 +1,30 @@
+<div class="hello">
+ <h1>hello</h1>
+</div>
+
+<style>
+ body {background-color: #00297c;}
+.hello h1 {
+  color: #00265c;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;
+  transform: translateX(100px);
+  transform: translateY(260px);
+  width: 410px;
+  height: 100px;
+ 
+ @keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  90% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+.cyber-body {
+  animation: flicker 0.2s infinite; /* A fast, subtle glitch */
+}
+
+}
+
+</style>
